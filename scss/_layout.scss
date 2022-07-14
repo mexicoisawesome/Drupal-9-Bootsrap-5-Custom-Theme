@@ -1,0 +1,74 @@
+/* Not much to see here. Bootstrap handling most of the layout. */
+
+body {
+  color: midgrey;
+  background-color: white;
+  overflow-x: hidden;
+  font-family: Myriad-Apple-Medium, Helvetica, sans-serif;
+  font-size: 16px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $primary-color;
+    font-family: Belgrano-Regular, "Times New Roman", Times, serif;
+    letter-spacing: -2px;
+    strong {
+      font-weight: normal !important;
+    }
+  }
+}
+
+#main-wrapper {
+  margin-bottom: 0;
+  min-height: 50vh;
+}
+
+/* Adjust the content top padding for views when top nav is sticky. */
+// body {
+//   &:not(.path-frontpage):not(.node--type-govcms-standard-page):not(.node--type-govcms-news-and-media) {
+//     #main-wrapper {
+//       padding-top: 70px;
+//       @include sm {
+//         padding-top: 90px;
+//       }
+//       @include md {
+//         padding-top: 0px;
+//       }
+//     }
+//   }
+// }
+
+.title {
+  margin-bottom: 1em;
+}
+
+table {
+  width: 100% !important;
+}
+body {
+  &:not(.path-frontpage) {
+    .main-content a[href^="http"]::after,
+.main-content a[href^="https://"]::after
+    {
+      content: "";
+      width: 14px;
+      height: 14px;
+      margin-left: 4px;
+      filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      filter: invert(13%) sepia(61%) saturate(5865%) hue-rotate(183deg) brightness(96%) contrast(102%);
+    }
+  }
+}
+
+.main-content a[href^="https://www.arc.gov.au"]::after
+{
+  display: none !important;
+}

@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Component for an accordion item.
+ *
+ * Variables:
+ * - accordion_item_id: [number] Serve to map Accordion title to body.
+ * - title: [string] Heading of the accordion item.
+ * - body: [string] Text of the item.
+ * - speed: [string] The speed of opening the accordion. Defaults to 'fast'.
+ * - orientation: [string] The initial state of the item.  Defaults to 'open'
+ */
+#}
+{% block accordion %}
+
+  <section class="au-accordion">
+
+    {% if orientation == 'open' %}
+      <a href="#accordion-{{ id }}" class="au-accordion-title"
+         aria-expanded="true" aria-selected="true" aria-controls="accordion-{{ id }}">{{ title }}</a>
+
+      <div class="au-accordion-body .show" aria-hidden="false" id="accordion-{{ id }}">
+        <div class="au-accordion-body-wrapper">{{ body|raw }}</div>
+      </div>
+
+    {% else %}
+
+      <a href="#accordion-{{ id }}" class="au-accordion-title"
+         aria-expanded="false" aria-selected="false" aria-controls="accordion-{{ id }}">{{ title }}</a>
+
+      <div class="au-accordion-body" aria-hidden="true" id="accordion-{{ id }}">
+        <div class="au-accordion__body-wrapper">{{ body|raw }}</div>
+      </div>
+
+    {% endif %}
+
+  </section>
+
+{% endblock %}

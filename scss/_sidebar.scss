@@ -1,0 +1,26 @@
+/* Sidebar Submenu. */
+.sidebar_first {
+  max-width: 100%;
+  margin: 0 auto;
+  //font-size: 0.8em;
+  order: 0 !important;
+  @include sidebarMenu();
+  .nav-item {
+    font-size: 0.8em;
+  }
+  .related__image {
+    img {
+      width: 100%;
+      position: relative;
+      top: -110px;
+      @include md {
+        top: 0;
+      }
+    }
+  }
+  @include md {
+    order: -1 !important;
+    max-width: 300px;
+    margin: 0 1em 0 0;
+  }
+}

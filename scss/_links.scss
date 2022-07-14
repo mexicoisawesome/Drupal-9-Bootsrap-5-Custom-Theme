@@ -1,0 +1,12 @@
+/* main content links */
+.main-content {
+  a {
+    color: $primary-color;
+    &:hover {
+      color: $primary-burgundy;
+    }
+    &:active {
+      color: $primary-burgundy-light;
+    }
+  }
+}

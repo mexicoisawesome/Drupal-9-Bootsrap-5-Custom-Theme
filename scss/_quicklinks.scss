@@ -1,0 +1,94 @@
+/* quicklinks used in slide-out menu. */
+.block-views-blockquicklinks-quicklinks {
+  color: white;
+  .views-row {
+    &:nth-child(1) {
+      .node--type-quicklink {
+        background-color: $primary-teal-light;
+        margin-top: 1em;
+        &:hover {
+          background-color: white;
+          border: 2px solid $primary-teal-light;
+          transition: .25s all ease-in-out;
+          h3 {
+            color: $primary-teal-light;
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      .node--type-quicklink {
+        background-color: $primary-indigo-light;
+        &:hover {
+          background-color: white;
+          border: 2px solid $primary-indigo-light;
+          transition: .25s all ease-in-out;
+          h3 {
+            color: $primary-indigo-light;
+          }
+        }
+      }
+    }
+    &:nth-child(3) {
+      .node--type-quicklink {
+        background-color: $primary-burgundy-light;
+        &:hover {
+          background-color: white;
+          border: 2px solid $primary-burgundy-light;
+          transition: .25s all ease-in-out;
+          h3 {
+            color: $primary-burgundy-light;
+          }
+        }
+      }
+    }
+    &:nth-child(4) {
+      .node--type-quicklink {
+        background-color: $primary-gold;
+        &:hover {
+          background-color: white;
+          border: 2px solid $primary-gold;
+          transition: .25s all ease-in-out;
+          h3 {
+            color: $primary-gold;
+          }
+        }
+      }
+    }
+    &:nth-child(5) {
+      .node--type-quicklink {
+        background-color: $primary-teal;
+        &:hover {
+          background-color: white;
+          border: 2px solid $primary-teal;
+          transition: .25s all ease-in-out;
+          h3 {
+            color: $primary-teal;
+          }
+        }
+      }
+    }
+    .node--type-quicklink {
+      h3 {
+        margin: 0;
+        font-size: 1.2em;
+        color: white;
+        font-family: Myriad-Apple-Medium, Helvetica, sans-serif;
+        letter-spacing: 0.01em;
+      }
+      cursor: pointer;
+      border: 2px solid transparent;
+      color: white;
+      text-align: center;
+      margin-top: 2em;
+      padding: 1em;
+    }
+  }
+  .more-link {
+    text-align: center;
+    margin-top: 2em;
+    a {
+      color: $primary-color;
+    }
+  }
+}

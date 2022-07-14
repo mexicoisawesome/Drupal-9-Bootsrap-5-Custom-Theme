@@ -1,0 +1,54 @@
+.breadcrumb {
+  height: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-left: 0.8em;
+  font-weight: bold;
+  margin-bottom: 2em;
+  .breadcrumb-item {
+    color: $primary-color;
+    a {
+      color: $primary-color;
+    }
+    &.active {
+      font-weight: normal;
+      max-width: 70%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+@include sm {
+  .breadcrumb {
+    margin-top: 1em;
+    height: auto;
+    visibility: visible;
+    padding-left: 0;
+    padding-top: 1em;
+    font-size: .8em;
+  }
+}
+
+@include md {
+  .breadcrumb {
+    padding-left: 0.8em;
+    padding-top: 1em;
+    font-size: 1em;
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item {
+  padding-left: 0;
+  display: inline-block;
+  &:before {
+    content: ">>";
+    font-size: 0.5em;
+    font-weight: bold;
+    line-height: 290%;
+    padding: 0 1.5em;
+    color: $primary-color;
+  }
+
+}

@@ -1,0 +1,30 @@
+global-styling:
+  version: VERSION
+  js:
+    js/bootstrap.bundle.min.js: {}
+    js/menus.js: {}
+    js/custom.js: {}
+  css:
+    component:
+      css/bootstrap.min.css: {}
+      css/style.min.css: {weight: 300}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+uikit-animate:
+  version: 1.0.2
+  js:
+    js/animate.min.js: {}
+uikit-accordion:
+  version: 3.0.0
+  js:
+    js/accordion.min.js: {}
+slick:
+  version: 1.x
+  css:
+    theme:
+      js/slick/slick.css: {}
+      js/slick/slick-theme.css: {}
+  js:
+    js/slick/slick.min.js: {}

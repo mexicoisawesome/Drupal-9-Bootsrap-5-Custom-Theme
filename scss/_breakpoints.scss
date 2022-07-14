@@ -1,0 +1,37 @@
+/*Breakpoints*/
+
+$small-min: 576px;
+$medium-min: 768px;
+$large-min: 992px;
+$xlarge-min: 1200px;
+$desktop: 1400px;
+
+@mixin sm {
+  @media (min-width: #{$small-min}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$medium-min}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$large-min}) {
+    @content;
+  }
+}
+
+@mixin xlg {
+  @media (min-width: #{$xlarge-min}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

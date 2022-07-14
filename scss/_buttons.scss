@@ -1,0 +1,23 @@
+/* Standard buttons. */
+.btn {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 100%;
+  background-color: $primary-color;
+  border-radius: 0 !important;
+  &:hover {
+    color: white;
+    background-color: $primary-teal-light;
+  }
+}
+
+/* Header buttons */
+.search__button, .quicklinks__button {
+  width: 93px;
+  margin: .9em 0 0 0;
+  font-size: 0.7em;
+  line-height: 120%;
+}

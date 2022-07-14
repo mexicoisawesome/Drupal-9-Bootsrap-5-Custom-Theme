@@ -1,0 +1,210 @@
+.path-frontpage {
+  /* Slideshow */
+  .slider__wrapper {
+    padding-top: 65px;
+    @include md {
+      padding-top: 0px;
+    }
+    .views-element-container {
+      padding-top: 0;
+      .views-row {
+        padding: 0;
+      }
+    }
+  }
+  .footer-top {
+    margin-top: 0;
+  }
+
+  /* Generic Content views */
+  #main-wrapper {
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+
+    .views-element-container {
+      overflow: hidden;
+      padding-top: 2em;
+    }
+  }
+
+  /* Custom Content views */
+
+  // First set of 'featured' link cards appearing below the homepage slider.
+  .featured__links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 0;
+    width: auto;
+    min-width: 340px;
+    padding-bottom: 2em;
+    max-width: 100%;
+    align-items: stretch;
+    @include featuredCard;
+    @include sm {
+      padding-bottom: 4em;
+    }
+  }
+
+  // Second set of 'related' link cards appearing below the featured cards.
+  .related__links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include relatedCard;
+    .node {
+      &:nth-child(1) {
+        @include sm {
+          margin-right: 0;
+        }
+        @include md {
+          margin-right: 0;
+        }
+        @include lg {
+          margin-right: 2em;
+        }
+      }
+      time {
+        display: none;
+      }
+      &:nth-child(2) {
+        background-color: $primary-indigo-light;
+        @include sm {
+          margin-right: 0;
+        }
+        @include lg {
+          margin-right: 0;
+        }
+        @include xlg {
+          margin-right: 2em;
+        }
+      }
+      &:nth-child(3) {
+        margin-right: 0;
+        background-color: $primary-burgundy-light;
+      }
+    }
+  }
+
+  // Explore ARC.
+  .block-views-blockexplore-arc-block-1 {
+    background-color: whitesmoke;
+    @include relatedCard;
+    // Card Overrides.
+    .row {
+      .node {
+        max-height: 420px;
+        min-height: 420px;
+        .related__wrapper {
+          background-color: $primary-teal-light;
+          @include bg-fade;
+          color: white;
+          h3 {
+            a {
+              //color: white !important;
+            }
+          }
+        }
+        &:hover {
+          .related__wrapper {
+            //background-color: white;
+            @include bg-fade;
+            a {
+              //color: $primary-teal-light !important;
+            }
+          }
+        }
+      }
+    }
+    .slick-list {
+      margin-right: 0;
+      @include md {
+        margin-right: -2em;
+      }
+    }
+  }
+
+  // News.
+  .block-views-blocknews-block-1 {
+    background-color: white;
+    @include relatedCard;
+    // Card Overrides.
+    .view {
+      .row {
+        padding-bottom: 0;
+        .node {
+          min-height: 424px !important;
+          margin-bottom: 1.5em;
+          .related__wrapper {
+            min-height: 250px;
+            max-height: 250px;
+            overflow: hidden;
+            background-color: white;
+            @include bg-fade;
+            color: black;
+            .related__title {
+              margin-bottom: 0.8em;
+              a {
+                color: black !important;
+              }
+            }
+            time {
+              float: left;
+              font-style: italic;
+              font-size: 0.8em;
+              &:after {
+                content: "|";
+                font-style: normal;
+                padding: 0 0.5em;
+              }
+            }
+            .related__category {
+              font-size: 0.8em;
+            }
+            .related__text {
+              overflow: hidden;
+              max-height: 100px;
+              a {
+                color: black !important;
+              }
+            }
+          }
+          &:hover {
+            .related__wrapper {
+              background-color: whitesmoke;
+              @include bg-fade;
+              a {
+                color: black !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .slick-list {
+      margin-right: 0;
+      @include md {
+        margin-right: -2em;
+      }
+    }
+  }
+
+  // Key Dates & Events.
+  .block-views-blockevents-block-1 {
+    background-color: whitesmoke;
+    .view {
+      .row {
+        .slick-list {
+          margin-bottom: 4.5em;
+          display: block;
+          @include eventCard;
+        }
+        .slick-dots {
+          bottom: -3em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,502 @@
+/* Bootstrap Mobile main navigation menu overrrides. */
+.mobile__menu {
+  @include md {
+    display: none;
+  }
+  font-size: 130%;
+  .navbar-nav {
+    z-index: 4;
+    .nav-item {
+      border-top: 1px solid $secondary-teal-light;
+      &:last-child {
+        border-bottom: 1px solid $secondary-teal-light;
+      }
+      .dropdown-toggle {
+        &:after {
+          margin-left: 0.5em;
+        }
+      }
+      .nav-link {
+        color: $primary-color;
+        padding-left: 1em;
+        padding-right: 1em;
+        &.active {
+          a {
+            color: $primary-color;
+          }
+          color: $primary-color;
+          background-color: $secondary-teal-light;
+        }
+        &.show,
+        &.menu-item--expanded {
+          a {
+            color: white !important;
+          }
+          color: white;
+          background-color: $primary-teal-light;
+        }
+
+        &:hover {
+          a {
+            color: white;
+          }
+          color: white;
+          background-color: $secondary-color;
+        }
+      }
+      /* First-level menu items. */
+
+      .dropdown-menu {
+        border: none;
+        border-radius: 0;
+        color: $primary-color;
+        background-color: transparent;
+        font-size: 0.9em;
+        &.show,
+        &.menu-item--expanded {
+          .dropdown-item {
+            color: $primary-color;
+            background-color: transparent;
+            &:hover {
+              a {
+                color: $primary-color;
+              }
+              color: $primary-color;
+              background-color: transparent;
+            }
+          }
+        }
+        & .dropdown-item {
+          color: $primary-color;
+          background-color: transparent;
+          &.active {
+            color: $primary-color;
+            background-color: transparent;
+          }
+          a {
+            text-decoration: none;
+            color: $primary-color;
+            text-transform: uppercase;
+            white-space: normal;
+            font-size: 82%;
+            width: 100%;
+            display: inline-block;
+            padding: 0.6rem 1rem 0.6rem 0.5rem;
+
+            &.active {
+              color: $primary-color;
+              background-color: $secondary-teal-light;
+            }
+            &.show,
+            &.menu-item--expanded {
+              a {
+                color: white !important;
+              }
+              color: white !important;
+              background-color: $primary-teal-light !important;
+            }
+            &:hover {
+              background-color: $secondary-color !important;
+              color: white !important;
+            }
+          }
+
+          /* Second-level menu items. */
+          .dropdown-menu {
+            .dropdown-item {
+              width: 90%;
+              margin-left: 1em;
+              padding: 0 1em;
+              margin-top: 0.3em;
+              &:before {
+                display: inline-block;
+                color: $primary-color;
+                vertical-align: 0.2em;
+                font-size: 0.6em;
+                margin-right: 0.5em;
+                font-weight: bold;
+                content: ">>";
+              }
+              &:hover {
+                color: white !important;
+                background-color: $secondary-color !important;
+                &:before,
+                a {
+                  color: white;
+                  background-color: $secondary-color !important;
+                }
+              }
+              &.active {
+                color: $primary-color;
+                background-color: $secondary-teal-light;
+              }
+              a {
+                width: 95%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Bootstrap Desktop main navigation menu overrrides. */
+.primary__menu {
+  background-color: $primary-color;
+  height: 34px;
+  font-size: 0.8em;
+  clear: both;
+  border-bottom: 1px solid dimgray;
+  @include lg {
+    font-size: 0.9em;
+    height: 37px;
+  }
+  @include md {
+    display: block;
+    visibility: visible;
+  }
+  .container {
+    min-width: 792px;
+  }
+  .menu-hover {
+    color: white !important;
+    background-color: $primary-teal-light !important;
+    border: 0;
+  }
+  .navbar-nav {
+    @include flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    list-style: none;
+    .nav-item {
+      padding: 0;
+      a {
+        color: white;
+        background-color: transparent;
+        padding: 0.6em 0.8em 0.5em 0.8em;
+        &:hover {
+          color: white;
+          background-color: $primary-teal-light;
+        }
+        &:active,
+        &.expanded,
+        &.active {
+          color: white;
+          font-weight: bold;
+          background-color: $primary-teal-light;
+        }
+      }
+      .dropdown-toggle {
+        &:after {
+          display: none;
+        }
+      }
+      .dropdown-menu {
+        z-index: 2;
+        padding: 0;
+        width: auto;
+        inset: -1px auto auto 0px !important;
+        @include lg {
+          inset: -2px auto auto 0px !important;
+        }
+        border: 2px solid $primary-teal-light;
+        border-top: none;
+        border-radius: 0;
+        color: $primary-color;
+        background-color: white;
+        overflow: hidden;
+        .dropdown-item {
+          padding: 0;
+          width: 100%;
+          color: $primary-color;
+          background-color: white;
+          text-transform: uppercase;
+          font-size: 0.8em;
+          a {
+            color: $primary-color;
+            text-indent: 1em;
+            background-color: white;
+            text-decoration: none;
+            font-weight: normal;
+            width: 100%;
+            display: inline-block;
+            white-space: normal;
+            @include sm {
+              white-space: nowrap;
+            }
+            padding: 0.5em 2em 0.5em 0.5em;
+            &:hover {
+              background-color: $primary-teal-light;
+              color: white;
+              text-decoration: none;
+            }
+            &:active,
+            &.active {
+              background-color: $secondary-teal-light;
+              color: $primary-color;
+              text-decoration: none;
+              font-weight: normal;
+            }
+          }
+          .dropdown-toggle {
+            &:after {
+              display: inline-block;
+              border: none;
+              content: "▼";
+              font-size: 9px;
+              margin-left: 0;
+              vertical-align: 0.205em;
+            }
+          }
+          .dropdown-menu {
+            min-width: 0px;
+            height: auto;
+            border: 0;
+            text-indent: 1em;
+            color: $primary-color;
+            font-weight: normal;
+            background-color: transparent;
+            top: 0.02em !important;
+            position: relative !important;
+            transform: none !important;
+            transition: ease-out 10s;
+            .dropdown-item {
+              &:active,
+              &.active {
+                background-color: $secondary-teal-light !important;
+              }
+              &:before {
+                display: inline-block;
+                vertical-align: 0.255em;
+                font-size: 0.6em;
+                font-weight: bold;
+                content: ">>";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Hide the navigation menu in the sidebar flyout menu in desktop (we only want search and quicklinks). */
+.offcanvas {
+  .region-primary-menu {
+    display: block;
+    @include md {
+      display: none;
+    }
+  }
+}
+
+/* Sidebar Submenu. */
+@mixin sidebarMenu {
+  nav {
+    text-transform: uppercase;
+    padding: 0 0 0 0.1em;
+    display: none;
+    font-size: 1.3em;
+    @include md {
+      display: block;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      padding: 0;
+      max-width: 300px;
+      a {
+        color: $primary-color;
+        background-color: transparent;
+        padding: 0.6em 0.8em 0.5em 0.8em;
+        &:hover {
+          color: white;
+          background-color: $primary-color;
+        }
+        &:active,
+        &.expanded,
+        &.active {
+          background-color: $secondary-teal-light;
+        }
+      }
+      .dropdown-menu {
+        display: block;
+        border: 0;
+        .dropdown-item {
+          padding: 0;
+          width: 100%;
+          font-size: 0.8em;
+          color: $primary-color;
+          background-color: white;
+          text-transform: uppercase;
+          border: 0;
+          a {
+            color: $primary-color;
+            text-indent: 1em;
+            background-color: white;
+            text-decoration: none;
+            font-weight: normal;
+            width: 100%;
+            display: inline-block;
+            white-space: normal;
+            @include sm {
+              white-space: nowrap;
+            }
+            padding: 0.5em 2em 0.5em 2.5em;
+            &:hover {
+              background-color: $primary-color;
+              color: white;
+              text-decoration: none;
+            }
+            &:active,
+            &.active {
+              background-color: $secondary-teal-light;
+              color: $primary-color;
+              text-decoration: none;
+              font-weight: normal;
+            }
+            &:before {
+              display: inline-block;
+              font-size: 0.6em;
+              margin-top: 0.5em;
+              font-weight: bold;
+              position: absolute;
+              left: 2em;
+              content: ">>";
+            }
+          }
+          .dropdown-toggle {
+            &:after {
+              display: inline-block;
+              border: none;
+              content: "▼";
+              font-size: 9px;
+              margin-left: 0;
+              vertical-align: 0.205em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Bootstrap Footer top menu overrrides. */
+.region-footer-top {
+  width: 100%;
+  padding-top: 1.5em;
+  margin-left: 0;
+  @include sm {
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+  }
+  .navbar-nav {
+    display: flex;
+    min-width: 100%;
+    flex-direction: row;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    row-gap: 2em;
+    &:after {
+      content: "";
+      flex: auto;
+      display: none;
+    }
+    @include sm {
+      justify-content: flex-start;
+      text-align: left;
+    }
+    @include lg {
+      min-width: 992px;
+    }
+    @include xlg {
+      min-width: 1366px;
+    }
+    .nav-item {
+      padding: 0;
+      display: none;
+      min-width: 280px;
+      max-width: 280px;
+      @include sm {
+        padding: 0;
+        max-width: 100%;
+      }
+      @include md {
+        min-width: 330px;
+        max-width: 330px;
+      }
+      @include xlg {
+        min-width: 280px;
+        max-width: 280px;
+      }
+      @include desktop {
+        min-width: 320px;
+        max-width: 100%;
+      }
+      &.menu-item--expanded {
+        display: block;
+      }
+      a {
+        color: white;
+        letter-spacing: 0.05em;
+        background-color: transparent;
+        padding: 0 0 0.7em 0;
+        font-weight: bold;
+        &:hover {
+          color: white;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        &:active,
+        &.expanded,
+        &.active {
+          color: white;
+          background-color: transparent;
+        }
+        &:after {
+          border: 0;
+        }
+      }
+      .dropdown-menu {
+        z-index: 1;
+        padding: 0;
+        width: auto;
+        border: none;
+        border-top: none;
+        border-radius: 0;
+        color: white;
+        background-color: transparent;
+        display: none !important;
+        @include md {
+          display: block !important;
+        }
+        .dropdown-item {
+          padding: 0 0 0.5em 0;
+          width: 100%;
+          color: white;
+          background-color: transparent;
+          @include sm {
+            padding: 0;
+          }
+          a {
+            color: white !important;
+            text-indent: 0;
+            background-color: $primary-burgundy !important;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 1em;
+            @include sm {
+              font-size: 0.8em;
+            }
+            width: 100%;
+            display: inline-block;
+            padding: 0 2em 0 0;
+            white-space: normal;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+name: 'Custom Theme'
+type: theme
+description: 'Custom theme built on the SASS starter kit for Bootstrap Barrio SubTheme.'
+# version: VERSION
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+libraries:
+  - custom_theme/global-styling
+  - custom_theme/slick
+libraries-override:
+  bootstrap_barrio/global-styling: false
+regions:
+  header: Header
+  header_form: 'Header form'
+  primary_menu: 'Primary menu'
+  slider: Slideshow
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  footer_top: 'Footer Top'
+  footer: 'Footer'

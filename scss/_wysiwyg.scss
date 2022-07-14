@@ -1,0 +1,38 @@
+.page__body {
+  figcaption {
+    background-color: whitesmoke;
+    padding: 0.3em 0.5em;
+    font-size: 0.8em;
+    max-width: 100%;
+  }
+
+  figure,
+  div {
+    margin: 0 0 1.4em 0;
+    &.align-right {
+      max-width: 100%;
+      margin: 0 0 1.4em 0;
+      @include xlg {
+        margin: 0 0 1.4em  1.4em;
+        max-width: 40%;
+      }
+    }
+    &.align-left {
+      margin: 0 0 1.4em 0;
+      max-width: 100%;
+      @include xlg {
+        margin: 0 1.4em 1.4em 0;
+        max-width: 40%;
+      }
+    }
+    &.align-center {
+      margin: 0 auto 1.4em auto;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  div {
+    margin-bottom: 0;
+  }
+}

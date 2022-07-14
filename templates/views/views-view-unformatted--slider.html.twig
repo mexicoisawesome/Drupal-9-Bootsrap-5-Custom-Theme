@@ -1,0 +1,31 @@
+{% for row in rows %}
+  {%
+    set row_classes = [
+    default_row_class ? 'views-row',
+  ]
+  %}
+
+  <div{{ row.attributes.addClass(row_classes) }}>
+    {% if row.content['#row']._entity.field_more_information[0].uri %}
+      <a href="{{ row.content['#row']._entity.field_more_information.0.url }}">
+        <div class="slider" style="background-image: url({{ row.content['#row']._entity.field_media_image.entity.field_media_image.entity.fileuri | image_style('slider')}});">
+          <div class="slider-text-container">
+            <div class="slider-text">
+              <h4>{{ row.content['#row']._entity.title[0].value }}</h4>
+              {{ row.content['#row']._entity.body[0].value | raw }}
+            </div>
+          </div>
+        </div>
+      </a>
+    {% else %}
+      <div class="slider" style="background-image: url({{ row.content['#row']._entity.field_media_image.entity.field_media_image.entity.fileuri | image_style('slider')}});">
+        <div class="slider-text-container">
+          <div class="slider-text">
+            <h2>{{ row.content['#row']._entity.title[0].value }}</h2>
+            {{ row.content['#row']._entity.body[0].value | raw }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}
