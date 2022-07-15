@@ -1,5 +1,5 @@
 .footer-top {
-  background-color: $primary-burgundy;
+  background-color: $primary-indigo;
   color: white;
   margin-top: 1.5em;
   padding: 1.5em 0 2em 0;
@@ -7,8 +7,8 @@
 
 /* Main Footer section. */
 .site-footer {
-  background-color: $primary-burgundy-light;
-  border-top: 1px solid rosybrown;
+  background-color: $primary-indigo-light;
+  border-top: 1px solid silver;
   color: white;
   padding: 2em 0;
   margin-top: 0;
@@ -16,43 +16,34 @@
   .row {
     justify-content: flex-start;
     /* Footer logo */
-    .block-block-footerlogo {
-      margin: 0 auto 2em auto;
-      max-width: 120px;
+    .footer__logo {
+      margin: 0 auto;
+      text-align: center;
+      max-width: 360px;
       height: auto;
-      @include sm {
-        margin: 0.4em 0 0 0;
+      @include md {
+        max-width: 30%;
+        text-align: left;
       }
     }
     /* Footer Text */
-    .block-block-footertext {
+    .footer__text {
       max-width: 360px;
       text-align: center;
       text-indent: 0;
-      margin: 0.25em auto 0 auto;
+      margin: 0 auto 0 auto;
       p {
         margin: 0.5em;
         padding: 0;
         line-height: 100%;
       }
-      @include sm {
-        text-indent: -2em;
-      }
       @include md {
-        text-indent: -2em;
-      }
-      @include lg {
-        text-indent: -10em;
-      }
-      @include xlg {
-        text-indent: -10em;
-      }
-      @include desktop {
-        text-indent: 10em;
-        max-width: 500px;
+        max-width: 70%;
+        text-align: right;
+        margin: 1em auto 0 auto;
       }
     }
-    .navigation {
+    .footer__nav {
       max-width: 100%;
       margin: 1em auto 2em auto;
       font-size: 1.1em;
@@ -92,7 +83,7 @@
       }
     }
     /* Disclaimer */
-    .block-block-footeracknowledgement {
+    .footer__acknow {
       text-align: center;
       max-width: 866px;
       margin: 0 auto;
