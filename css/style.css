@@ -617,6 +617,7 @@ body:not(.path-frontpage) .main-content a[href^="https://"]::after {
               .region-footer-top .navbar-nav .nav-item .dropdown-menu .dropdown-item a {
                 font-size: 0.8em; } }
 
+/* Top Footer menu section. */
 .footer-top {
   background-color: #341d6a;
   color: white;
@@ -638,7 +639,7 @@ body:not(.path-frontpage) .main-content a[href^="https://"]::after {
             justify-content: flex-start;
     /* Footer logo */
     /* Footer Text */
-    /* Disclaimer */ }
+    /* Footer acknowledgemnt */ }
     .site-footer .row .footer__logo {
       margin: 0 auto;
       text-align: center;
