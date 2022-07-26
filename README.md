@@ -16,7 +16,7 @@ This is a Barrio subtheme that simplifies integrating Bootstrap 5 SASS with Drup
 
 This subtheme is compatible with Barrio Bootstrap 5 (5.5.x).
 
-This subtheme overrides almost all Drupal CSS and replaces, where posible, Bootstrap's SASS variables.
+This subtheme overrides almost all Drupal CSS and replaces, where possible, Bootstrap's SASS variables.
 
 ## Installation
 

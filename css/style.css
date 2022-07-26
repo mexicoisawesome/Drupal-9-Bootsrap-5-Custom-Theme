@@ -639,6 +639,7 @@ body:not(.path-frontpage) .main-content a[href^="https://"]::after {
             justify-content: flex-start;
     /* Footer logo */
     /* Footer Text */
+    /* Footer social media links */
     /* Footer acknowledgemnt */ }
     .site-footer .row .footer__logo {
       margin: 0 auto;
@@ -704,6 +705,28 @@ body:not(.path-frontpage) .main-content a[href^="https://"]::after {
             display: inline-block;
             color: white;
             text-decoration: underline; }
+    .site-footer .row .footer__social {
+      display: block;
+      padding-left: 0;
+      line-height: 1em;
+      text-align: center;
+      margin: 0 auto; }
+      .site-footer .row .footer__social a {
+        visibility: hidden;
+        color: white;
+        text-decoration: underline; }
+      .site-footer .row .footer__social .fb__icon:after {
+        font-family: icomoon;
+        content: "\ea91";
+        visibility: visible; }
+      .site-footer .row .footer__social .li__icon:after {
+        font-family: icomoon;
+        content: "\eac9";
+        visibility: visible; }
+      .site-footer .row .footer__social .ig__icon:after {
+        font-family: icomoon;
+        content: "\ea92";
+        visibility: visible; }
     .site-footer .row .footer__acknow {
       text-align: center;
       max-width: 866px;

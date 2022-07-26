@@ -83,6 +83,34 @@
         }
       }
     }
+    /* Footer social media links */
+    .footer__social {
+      display: block;
+      padding-left: 0;
+      line-height: 1em;
+      text-align: center;
+      margin: 0 auto;
+      a {
+        visibility: hidden;
+        color: white;
+        text-decoration: underline;
+      }
+      .fb__icon:after {
+        font-family: icomoon;
+        content: "\ea91";
+        visibility: visible;
+      }
+      .li__icon:after {
+        font-family: icomoon;
+        content: "\eac9";
+        visibility: visible;
+      }
+      .ig__icon:after {
+        font-family: icomoon;
+        content: "\ea92";
+        visibility: visible;
+      }
+    }
     /* Footer acknowledgemnt */
     .footer__acknow {
       text-align: center;
