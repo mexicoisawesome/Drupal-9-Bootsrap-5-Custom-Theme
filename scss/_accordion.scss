@@ -1,5 +1,5 @@
 a.au-accordion-title {
-  background-color: $primary-teal-light;
+  background-color: $primary-color;
   color: white;
   cursor: pointer;
   padding: 0.5em 1em;
@@ -34,7 +34,7 @@ a.au-accordion-title {
     transition: all 0.3s;
   }
   &.active {
-    background-color: $primary-teal-light;
+    background-color: $primary-color;
     font-weight: 600;
     color: white;
     &::after {

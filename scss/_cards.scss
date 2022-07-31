@@ -28,7 +28,7 @@
       }
       .featured__icon {
         &:after {
-          background-color: $primary-teal-light;
+          background-color: $primary-color;
           z-index: 1;
           transition: transform 0.2s;
           transform: scale(1.1);
@@ -36,118 +36,118 @@
       }
     }
     &:nth-child(1) {
-      background-color: $primary-teal-light;
-      border: 2px solid $primary-teal-light;
+      background-color: $primary-color;
+      border: 2px solid $primary-color;
       &:hover {
         background-color: white;
         transition: 0.25s all ease-in-out;
         .featured__link {
-          color: $primary-teal-light;
+          color: $primary-color;
           font-weight: bold;
           a {
-            color: $primary-teal-light;
+            color: $primary-color;
             &:before {
-              color: $primary-teal-light;
+              color: $primary-color;
             }
           }
         }
       }
       .featured__icon {
         &:after {
-          background-color: $primary-teal-light;
+          background-color: $primary-color;
         }
       }
     }
 
     &:nth-child(2) {
-      background-color: $primary-indigo-light;
-      border: 2px solid $primary-indigo-light;
+      background-color: $primary-color;
+      border: 2px solid $primary-color;
       &:hover {
         background-color: white;
         transition: 0.25s all ease-in-out;
         .featured__link {
-          color: $primary-indigo-light;
+          color: $primary-color;
           a {
-            color: $primary-indigo-light;
+            color: $primary-color;
             &:before {
-              color: $primary-indigo-light;
+              color: $primary-color;
             }
           }
         }
       }
       .featured__icon {
         &:after {
-          background-color: $primary-indigo-light;
+          background-color: $primary-color;
         }
       }
     }
     &:nth-child(3) {
-      background-color: $primary-burgundy-light;
-      border: 2px solid $primary-burgundy-light;
+      background-color: $primary-color;
+      border: 2px solid $primary-color;
       &:hover {
         background-color: white;
         transition: 0.25s all ease-in-out;
         .featured__link {
-          color: $primary-burgundy-light;
+          color: $primary-color;
           a {
-            color: $primary-burgundy-light;
+            color: $primary-color;
             &:before {
-              color: $primary-burgundy-light;
+              color: $primary-color;
             }
           }
         }
       }
       .featured__icon {
         &:after {
-          background-color: $primary-burgundy-light;
+          background-color: $primary-color;
         }
       }
     }
     &:nth-child(4) {
-      background-color: $primary-gold;
-      border: 2px solid $primary-gold;
+      background-color: $primary-color;
+      border: 2px solid $primary-color;
       &:hover {
         background-color: white;
         transition: 0.25s all ease-in-out;
         .featured__link {
-          color: $primary-gold;
+          color: $primary-color;
           a {
-            color: $primary-gold;
+            color: $primary-color;
             &:before {
-              color: $primary-gold;
+              color: $primary-color;
             }
           }
         }
       }
       .featured__icon {
         &:after {
-          background-color: $primary-gold;
+          background-color: $primary-color;
         }
       }
     }
     &:nth-child(5) {
       flex-grow: 2;
       max-width: 320px;
-      background-color: $primary-teal;
-      border: 2px solid $primary-teal;
+      background-color: $primary-color;
+      border: 2px solid $primary-color;
       &:hover {
         background-color: white;
         transition: 0.25s all ease-in-out;
         .featured__link {
-          color: $primary-teal;
+          color: $primary-color;
           a {
-            color: $primary-teal;
+            color: $primary-color;
           }
           a {
             &:before {
-              color: $primary-teal;
+              color: $primary-color;
             }
           }
         }
       }
       .featured__icon {
         &:after {
-          background-color: $primary-teal;
+          background-color: $primary-color;
         }
       }
       @include sm {
@@ -304,7 +304,7 @@
     .node {
       max-width: 410px;
       min-height: 285px;
-      background-color: $primary-teal-light;
+      background-color: $primary-color;
       color: white;
       margin-right: 0;
       @include sm {
@@ -422,7 +422,7 @@
       max-width: 100%;
       min-width: 100%;
       min-height: 0;
-      background-color: $primary-teal-light;
+      background-color: $primary-color;
       color: white;
       margin-right: 0;
       margin-bottom: 1em;
@@ -462,7 +462,7 @@
       }
       .date__icon {
         @include bg-fade;
-        background-color: $primary-teal-light;
+        background-color: $primary-color;
       }
     }
     .date__icon {

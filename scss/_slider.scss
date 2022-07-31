@@ -36,12 +36,12 @@
               min-height: 162px;
               @include bg-fade;
               &:hover {
-                background-color: $primary-teal-light;
+                background-color: $primary-color;
                 @include bg-fade;
               }
               @include sm {
                 padding: 15px;
-                background-color: $primary-teal;
+                background-color: $primary-color;
                 min-width: 320px;
                 max-width: 100%;
               }
@@ -108,7 +108,7 @@
     }
     button:before {
       font-size: 12px;
-      color: $secondary-teal-light;
+      color: $secondary-color;
       opacity: 1;
     }
     &:hover {

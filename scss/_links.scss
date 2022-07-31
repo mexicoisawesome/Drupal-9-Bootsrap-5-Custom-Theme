@@ -3,10 +3,10 @@
   a {
     color: $primary-color;
     &:hover {
-      color: $primary-burgundy;
+      color: $primary-color;
     }
     &:active {
-      color: $primary-burgundy-light;
+      color: $primary-color;
     }
   }
 }

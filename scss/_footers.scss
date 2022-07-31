@@ -1,21 +1,19 @@
 /* Top Footer menu section. */
-.footer-top {
-  background-color: $primary-indigo;
+.footer__top {
+  background-color: $primary-color;
   color: white;
   margin-top: 1.5em;
   padding: 1.5em 0 2em 0;
 }
 
 /* Main Footer section. */
-.site-footer {
-  background-color: $primary-indigo-light;
+.footer {
+  background-color: $secondary-color;
   border-top: 1px solid silver;
   color: white;
   padding: 2em 0;
   margin-top: 0;
   font-size: 0.8em;
-  .row {
-    justify-content: flex-start;
     /* Footer logo */
     .footer__logo {
       margin: 0 auto;
@@ -86,14 +84,18 @@
     /* Footer social media links */
     .footer__social {
       display: block;
-      padding-left: 0;
+      padding: 0;
       line-height: 1em;
       text-align: center;
-      margin: 0 auto;
+      margin: 0 auto 2em auto;
       a {
         visibility: hidden;
+        display: block;
         color: white;
+        padding: 0;
         text-decoration: underline;
+        text-align: center;
+        width: 60px;
       }
       .fb__icon:after {
         font-family: icomoon;
@@ -117,5 +119,4 @@
       max-width: 866px;
       margin: 0 auto;
     }
-  }
 }

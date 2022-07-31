@@ -4,66 +4,66 @@
   .views-row {
     &:nth-child(1) {
       .node--type-quicklink {
-        background-color: $primary-teal-light;
+        background-color: $primary-color;
         margin-top: 1em;
         &:hover {
           background-color: white;
-          border: 2px solid $primary-teal-light;
+          border: 2px solid $primary-color;
           transition: .25s all ease-in-out;
           h3 {
-            color: $primary-teal-light;
+            color: $primary-color;
           }
         }
       }
     }
     &:nth-child(2) {
       .node--type-quicklink {
-        background-color: $primary-indigo-light;
+        background-color: $primary-color;
         &:hover {
           background-color: white;
-          border: 2px solid $primary-indigo-light;
+          border: 2px solid $primary-color;
           transition: .25s all ease-in-out;
           h3 {
-            color: $primary-indigo-light;
+            color: $primary-color;
           }
         }
       }
     }
     &:nth-child(3) {
       .node--type-quicklink {
-        background-color: $primary-burgundy-light;
+        background-color: $primary-color;
         &:hover {
           background-color: white;
-          border: 2px solid $primary-burgundy-light;
+          border: 2px solid $primary-color;
           transition: .25s all ease-in-out;
           h3 {
-            color: $primary-burgundy-light;
+            color: $primary-color;
           }
         }
       }
     }
     &:nth-child(4) {
       .node--type-quicklink {
-        background-color: $primary-gold;
+        background-color: $primary-color;
         &:hover {
           background-color: white;
-          border: 2px solid $primary-gold;
+          border: 2px solid $primary-color;
           transition: .25s all ease-in-out;
           h3 {
-            color: $primary-gold;
+            color: $primary-color;
           }
         }
       }
     }
     &:nth-child(5) {
       .node--type-quicklink {
-        background-color: $primary-teal;
+        background-color: $primary-color;
         &:hover {
           background-color: white;
-          border: 2px solid $primary-teal;
+          border: 2px solid $primary-color;
           transition: .25s all ease-in-out;
           h3 {
-            color: $primary-teal;
+            color: $primary-color;
           }
         }
       }

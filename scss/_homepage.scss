@@ -70,7 +70,7 @@
         display: none;
       }
       &:nth-child(2) {
-        background-color: $primary-indigo-light;
+        background-color: $primary-color;
         @include sm {
           margin-right: 0;
         }
@@ -83,7 +83,7 @@
       }
       &:nth-child(3) {
         margin-right: 0;
-        background-color: $primary-burgundy-light;
+        background-color: $primary-color;
       }
     }
   }
@@ -98,7 +98,7 @@
         max-height: 420px;
         min-height: 420px;
         .related__wrapper {
-          background-color: $primary-teal-light;
+          background-color: $primary-color;
           @include bg-fade;
           color: white;
           h3 {
@@ -112,7 +112,7 @@
             //background-color: white;
             @include bg-fade;
             a {
-              //color: $primary-teal-light !important;
+              //color: $primary-color !important;
             }
           }
         }

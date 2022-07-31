@@ -7,9 +7,9 @@
   .navbar-nav {
     z-index: 4;
     .nav-item {
-      border-top: 1px solid $secondary-teal-light;
+      border-top: 1px solid $secondary-color;
       &:last-child {
-        border-bottom: 1px solid $secondary-teal-light;
+        border-bottom: 1px solid $secondary-color;
       }
       .dropdown-toggle {
         &:after {
@@ -25,7 +25,7 @@
             color: $primary-color;
           }
           color: $primary-color;
-          background-color: $secondary-teal-light;
+          background-color: $secondary-color;
         }
         &.show,
         &.menu-item--expanded {
@@ -33,7 +33,7 @@
             color: white !important;
           }
           color: white;
-          background-color: $primary-teal-light;
+          background-color: $primary-color;
         }
 
         &:hover {
@@ -85,7 +85,7 @@
 
             &.active {
               color: $primary-color;
-              background-color: $secondary-teal-light;
+              background-color: $secondary-color;
             }
             &.show,
             &.menu-item--expanded {
@@ -93,7 +93,7 @@
                 color: white !important;
               }
               color: white !important;
-              background-color: $primary-teal-light !important;
+              background-color: $primary-color !important;
             }
             &:hover {
               background-color: $secondary-color !important;
@@ -128,7 +128,7 @@
               }
               &.active {
                 color: $primary-color;
-                background-color: $secondary-teal-light;
+                background-color: $secondary-color;
               }
               a {
                 width: 95%;
@@ -161,7 +161,7 @@
   }
   .menu-hover {
     color: white !important;
-    background-color: $primary-teal-light !important;
+    background-color: $primary-color !important;
     border: 0;
   }
   .navbar-nav {
@@ -177,14 +177,14 @@
         padding: 0.6em 0.8em 0.5em 0.8em;
         &:hover {
           color: white;
-          background-color: $primary-teal-light;
+          background-color: $primary-color;
         }
         &:active,
         &.expanded,
         &.active {
           color: white;
           font-weight: bold;
-          background-color: $primary-teal-light;
+          background-color: $primary-color;
         }
       }
       .dropdown-toggle {
@@ -200,7 +200,7 @@
         @include lg {
           inset: -2px auto auto 0px !important;
         }
-        border: 2px solid $primary-teal-light;
+        border: 2px solid $primary-color;
         border-top: none;
         border-radius: 0;
         color: $primary-color;
@@ -227,13 +227,13 @@
             }
             padding: 0.5em 2em 0.5em 0.5em;
             &:hover {
-              background-color: $primary-teal-light;
+              background-color: $primary-color;
               color: white;
               text-decoration: none;
             }
             &:active,
             &.active {
-              background-color: $secondary-teal-light;
+              background-color: $secondary-color;
               color: $primary-color;
               text-decoration: none;
               font-weight: normal;
@@ -264,7 +264,7 @@
             .dropdown-item {
               &:active,
               &.active {
-                background-color: $secondary-teal-light !important;
+                background-color: $secondary-color !important;
               }
               &:before {
                 display: inline-block;
@@ -317,7 +317,7 @@
         &:active,
         &.expanded,
         &.active {
-          background-color: $secondary-teal-light;
+          background-color: $secondary-color;
         }
       }
       .dropdown-menu {
@@ -351,7 +351,7 @@
             }
             &:active,
             &.active {
-              background-color: $secondary-teal-light;
+              background-color: $secondary-color;
               color: $primary-color;
               text-decoration: none;
               font-weight: normal;
@@ -483,7 +483,7 @@
           a {
             color: white !important;
             text-indent: 0;
-            background-color: $primary-burgundy !important;
+            background-color: $primary-color !important;
             text-decoration: none;
             font-weight: normal;
             font-size: 1em;

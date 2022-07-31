@@ -150,17 +150,17 @@
 			{% endblock %}
 		</div>
 		{% if page.footer_top %}
-			<div class="footer-top">
+			<div class="footer__top">
 				<aside class="{{ container }} clearfix" role="complementary">
 					{{ page.footer_top }}
 				</aside>
 			</div>
 		{% endif %}
-		<footer class="site-footer">
+		<footer class="footer">
 			{% block footer %}
 				<div class="{{ container }}">
 					{% if page.footer %}
-						<div class="site-footer__bottom">
+						<div class="footer__bottom">
 							{{ page.footer }}
 						</div>
 					{% endif %}
