@@ -107,7 +107,7 @@ body:not(.path-frontpage) .main-content a[href^="https://"]::after {
   -webkit-filter: invert(13%) sepia(61%) saturate(5865%) hue-rotate(183deg) brightness(96%) contrast(102%);
           filter: invert(13%) sepia(61%) saturate(5865%) hue-rotate(183deg) brightness(96%) contrast(102%); }
 
-.main-content a[href^="https://www.arc.gov.au"]::after {
+.main-content a[href^="/"]::after {
   display: none !important; }
 
 /* Custom header styling. */

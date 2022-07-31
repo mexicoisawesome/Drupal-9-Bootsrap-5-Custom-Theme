@@ -68,7 +68,7 @@ body {
   }
 }
 
-.main-content a[href^="https://www.arc.gov.au"]::after
+.main-content a[href^="/"]::after
 {
   display: none !important;
 }
