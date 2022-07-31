@@ -1,19 +1,21 @@
-/*Colours*/
+/*Colour Palette*/
 
 $primary-grey: #333333;
 $primary-grey-light: #777777;
 $secondary-grey: #555555;;
-$secondary-grey-light: #cccccc;
+$secondary-grey-light: #dedede;
+
+$primary-red: #600000;
 
 $media-bg: #cdcdcd;
 $media: #dedede;
 $media-opacity: rgba(143, 164, 152, 0.8);
 
-$form_bg: $secondary-grey-light;
+$form_bg: #ffffff;
 
 /*Default Colours*/
 
 $primary-color: $primary-grey;
-$secondary-color: $secondary-grey;
+$secondary-color: $primary-red;
 $primary-bg-opacity: $primary-grey;
 $shadow-color: rgba(0, 0, 0, 0.1);
